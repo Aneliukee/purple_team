@@ -1,6 +1,7 @@
 exports.LunchStartPage = class LunchStartPage {
     constructor(page) {
         this.page = page;}
+    async goto() {
     await this.page.goto('https://lunch.devbstaging.com/login-password');
     await this.page.fill('[aria-label="Email"]', 'admin10@sourceryacademy.com');
     await this.page.fill('[aria-label="Password"]', 'nera svarbus62');
